@@ -13,7 +13,9 @@ ENERO 2024
 '''
 import sys
 import json
+import time
 from tabulate import tabulate
+tiempo_inicio = time.time()
 precio_producto = {}
 subtotal_ventas = {}
 cantidad_total = {}
@@ -55,7 +57,7 @@ for producto, compra in subtotal_ventas.items():
     if compra > 0:
         detalles_ventas.append([producto, cantidad_total[Product],
                                 precio_producto[Product], compra])
-
+tiempo_final = time.time() - tiempo_inicio
 with open(RESULTADO_ARCHIVO, 'a', encoding='UTF-8') as ARCHIVO:
     ARCHIVO.write(tabulate(detalles_ventas,
                            headers=['Producto', 'Cantidad',
@@ -65,3 +67,5 @@ with open(RESULTADO_ARCHIVO, 'a', encoding='UTF-8') as ARCHIVO:
                    headers=['Producto', 'Cantidad',
                             'Valor Unitario', 'Subtotal']))
     print(f"\nTotal Ventas: {VENTAS_TOTALES:.2f}\n")
+    ARCHIVO.write(f"\nTiempo de ejecución:{tiempo_final}\n")
+    print(f"\nTiempo de ejecución: {tiempo_final} segundos\n")
