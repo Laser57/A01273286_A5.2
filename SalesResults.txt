@@ -1,0 +1,60 @@
+Producto                          Cantidad    Valor Unitario    Subtotal
+------------------------------  ----------  ----------------  ----------
+Green smoothie                          22             17.68      388.96
+Raw legums                              21             17.11      359.31
+Pesto with basil                         2             18.19       36.38
+Hazelnut in black ceramic bowl           7             27.35      191.45
+Fresh stawberry                          5             28.59      142.95
+Homemade bread                           6             17.48      104.88
+Pears juice                              3             19.49       58.47
+Cuban sandwiche                         11             18.5       203.5
+Smoothie with chia seeds                 3             25.26       75.78
+Sandwich with salad                      5             22.48      112.4
+Cherry                                   4             14.35       57.4
+Corn                                    19             13.55      257.45
+Fresh blueberries                        7             21.01      147.07
+Rustic breakfast                         3             21.32       63.96
+Plums                                    4             19.18       76.72
+French fries                             3             18.32       54.96
+Ground beef meat burger                  4             11.73       46.92
+Tomatoes                                 2             26.03       52.06
+Peaches on branch                        2             25.62       51.24
+Total Ventas: 2481.86
+Producto                          Cantidad    Valor Unitario    Subtotal
+------------------------------  ----------  ----------------  ----------
+Sweet fresh stawberry                  221             29.45     6508.45
+Green smoothie                         580             17.68    10254.4
+Raw legums                              13             17.11      222.43
+Hazelnut in black ceramic bowl           7             27.35      191.45
+Fresh stawberry                        221             28.59     6318.39
+Homemade bread                         466             17.48     8145.68
+Cuban sandwiche                          2             18.5        37
+Smoothie with chia seeds                61             25.26     1540.86
+Sandwich with salad                     23             22.48      517.04
+Corn                                  1664             13.55    22547.2
+Fresh blueberries                     3790             21.01    79627.9
+Rustic breakfast                       200             21.32     4264
+Plums                                 1231             19.18    23610.6
+French fries                            57             18.32     1044.24
+Ground beef meat burger                146             11.73     1712.58
+Tomatoes                                 1             26.03       26.03
+Total Ventas: 166568.23
+Producto                          Cantidad    Valor Unitario    Subtotal
+------------------------------  ----------  ----------------  ----------
+Sweet fresh stawberry                  221             29.45     6508.45
+Green smoothie                         580             17.68    10254.4
+Raw legums                              13             17.11      222.43
+Hazelnut in black ceramic bowl           7             27.35      191.45
+Fresh stawberry                        221             28.59     6318.39
+Homemade bread                         466             17.48     8145.68
+Cuban sandwiche                          2             18.5        37
+Smoothie with chia seeds                61             25.26     1540.86
+Sandwich with salad                     23             22.48      517.04
+Corn                                  1664             13.55    22547.2
+Fresh blueberries                     3744             21.01    78661.4
+Rustic breakfast                       200             21.32     4264
+Plums                                 1231             19.18    23610.6
+French fries                            37             18.32      677.84
+Ground beef meat burger                146             11.73     1712.58
+Tomatoes                                 1             26.03       26.03
+Total Ventas: 165235.37
