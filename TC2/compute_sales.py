@@ -11,6 +11,7 @@ Parametos: requiere unicamente usar el comando python:
 LUIS ALFONSO SABANERO ESQUIVEL A01273286
 ENERO 2024
 '''
+import sys
 import json
 from tabulate import tabulate
 precio_producto = {}
@@ -18,9 +19,11 @@ subtotal_ventas = {}
 cantidad_total = {}
 VENTAS_TOTALES = 0
 RESULTADO_ARCHIVO = "SalesResults.txt"
+NOMBRE_ARCHIVO_LIST = sys.argv[1]
+NOMBRE_ARCHIVO_SALES = sys.argv[2]
 # Procesar compras
 detalles_ventas = []
-with open('TC1.ProductList.json', 'r', encoding='UTF-8') as archivo:
+with open(NOMBRE_ARCHIVO_LIST, 'r', encoding='UTF-8') as archivo:
     productos = json.load(archivo)
 
 
@@ -32,7 +35,7 @@ for producto in productos:
     cantidad_total[title] = 0
     precio_producto[title] = abs(float(price))
 
-with open('TC3.Sales.json', 'r', encoding='UTF-8') as archivo:
+with open(NOMBRE_ARCHIVO_SALES, 'r', encoding='UTF-8') as archivo:
     compras = json.load(archivo)
 
 for compra in compras:
@@ -53,7 +56,7 @@ for producto, compra in subtotal_ventas.items():
         detalles_ventas.append([producto, cantidad_total[Product],
                                 precio_producto[Product], compra])
 
-with open(RESULTADO_ARCHIVO, 'w', encoding='UTF-8') as ARCHIVO:
+with open(RESULTADO_ARCHIVO, 'a', encoding='UTF-8') as ARCHIVO:
     ARCHIVO.write(tabulate(detalles_ventas,
                            headers=['Producto', 'Cantidad',
                                     'Valor Unitario', 'Subtotal']))
@@ -61,4 +64,4 @@ with open(RESULTADO_ARCHIVO, 'w', encoding='UTF-8') as ARCHIVO:
     print(tabulate(detalles_ventas,
                    headers=['Producto', 'Cantidad',
                             'Valor Unitario', 'Subtotal']))
-    print(f"\nTotal Ventas: {VENTAS_TOTALES:.2f}")
+    print(f"\nTotal Ventas: {VENTAS_TOTALES:.2f}\n")
